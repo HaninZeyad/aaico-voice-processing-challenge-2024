@@ -32,11 +32,11 @@ The process_data function processes the data frames by first clipping the audio 
 The process_current_word function takes the completed word and the index of the first frame in the word as input arguments. It checks if the word is "galactic" or not, and labels the corresponding frames in the results array with 1 or 0, respectively.
 #### Team
 
-Team name: [MBZUAI (I forgot tHE name I set during registration]
+Team name: [MBZUAI (I forgot the name I set during registration]
 
 Members:
 
-- [Hanin Atwany] - [hanin.atwany@mbzuai.ac.ae]
+- [Hanin Atwany] - [hanin.atwany@mbzuai.ac.ae]- Student at mbzuai-uae
 - [Member Name] - [Member email]
 - [Member Name] - [Member email]
 
