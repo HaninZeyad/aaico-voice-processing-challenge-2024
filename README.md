@@ -27,33 +27,12 @@ To submit your solution, fork the repository, create a branch with the name of y
 To have your solution considered, it must be reproducible by the AAICO team.
 
 ### Solution description (to complete)
-Real-time Speech Recognition with Vosk and Python
+The process_data function processes the data frames by first clipping the audio data to the valid range of 0 to 255, then converting it to characters using the chr() function. The characters are concatenated to a string called current_word until a complete word is detected. When a complete word is detected, the process_current_word function is called to process the word and label the corresponding frames in the results array.
 
-This code demonstrates real-time speech recognition using the Vosk speech recognition library in Python. The code uses a threading model to simulate real-time processing and emitting of audio frames.
-
-##Requirements
-
-Python 3.6 or higher
-Vosk speech recognition library (!pip install vosk)
-A pre-trained Vosk model (vosk-model-small-en-us-0.15)
-
-##Setup
-
-Install the Vosk library by following the instructions on the Vosk website (https://alphacephei.com/vosk/install).
-Download a pre-trained Vosk model from the Vosk website (https://alphacephei.com/vosk/models) and extract it to a directory.
-Modify the model_path variable in the code to point to the directory containing the Vosk model.
-
-##Usage
-
-Run the code in a Python environment.
-The code will start emitting audio frames to the Vosk recognizer.
-The Vosk recognizer will process the audio frames in real-time and output the recognized speech.
-The recognized speech will be labeled as either 0 or 1 based on the recognized words.
-The labeled speech and timing information will be stored in the results array.
-The results array will be saved to a pickle file (results.pkl) at the end of processing.
+The process_current_word function takes the completed word and the index of the first frame in the word as input arguments. It checks if the word is "galactic" or not, and labels the corresponding frames in the results array with 1 or 0, respectively.
 #### Team
 
-Team name: [AI]
+Team name: [MBZUAI (I forgot tHE name I set during registration]
 
 Members:
 
